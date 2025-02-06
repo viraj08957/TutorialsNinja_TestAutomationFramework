@@ -8,13 +8,13 @@
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC02_LoginTest">
+      <class name="testCases.TC07_AddToCartTest">
         <methods>
           <include name="teardown"/>
-          <include name="verify_Login"/>
           <include name="setup"/>
+          <include name="testCartItemDetails"/>
         </methods>
-      </class> <!-- testCases.TC02_LoginTest -->
+      </class> <!-- testCases.TC07_AddToCartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

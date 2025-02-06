@@ -73,7 +73,7 @@ public class TC04_LoginDDT extends BaseClass {
     public String[][] getData() throws IOException {
         logger.info("Fetching data from Excel file for data-driven testing");
 
-        String path = "D:\\Hybrid_Framework_Project\\Automation_Framework_project\\testData\\TestData.xlsx"; // Excel file path
+        String path = "D:\\Hybrid_Framework_Project\\TutorialsNinja_TestAutomationFramework\\testData\\TestData.xlsx"; // Excel file path
         ExcelUtility xlutil = new ExcelUtility(path); // Create an object for ExcelUtility
 
         int totalRows = xlutil.getRowCount("Sheet1"); // Get total rows

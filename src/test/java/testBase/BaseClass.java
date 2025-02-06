@@ -47,7 +47,7 @@ public class BaseClass {
 
 		// Initialize logger and configure log4j properties
 		logger = Logger.getLogger("14 Sep Automation Framework");
-		PropertyConfigurator.configure("D:\\Hybrid_Framework_Project\\Automation_Framework_project\\src\\test\\resources\\Configuration\\log4j.properties");
+		PropertyConfigurator.configure("D:\\Hybrid_Framework_Project\\TutorialsNinja_TestAutomationFramework\\src\\test\\resources\\Configuration\\log4j.properties");
 		logger.info("Logger initialized");
 
 		// Browser setup

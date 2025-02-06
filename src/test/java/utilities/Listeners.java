@@ -1,6 +1,10 @@
 package utilities;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -14,7 +18,9 @@ import com.aventstack.extentreports.Status;
 import testBase.BaseClass;
 
 public class Listeners extends BaseClass implements ITestListener {
-
+     
+	
+	
     ExtentTest test;
     ExtentReports extent = ExtentReportTestNG.getReportObject();
 
@@ -72,6 +78,19 @@ public class Listeners extends BaseClass implements ITestListener {
         extentTest.get().log(Status.INFO, "Test Suite Execution Finished: " + context.getName());
         extent.flush();
         
-        String reportPath = "";
+       
+
+        File reportFile = new File("D:\\Hybrid_Framework_Project\\TutorialsNinja_TestAutomationFramework\\src\\test\\resources\\reports\\extentReport.html"); // Construct the full path to the report
+
+        // Check if Desktop is supported on the current system
+        if (Desktop.isDesktopSupported()) {
+            try {
+                Desktop.getDesktop().browse(reportFile.toURI()); // Open the report in the default browser
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Desktop is not supported. Please open the report manually.");
+        }
     }
 }

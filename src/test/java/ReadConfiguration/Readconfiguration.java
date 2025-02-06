@@ -12,7 +12,7 @@ public class Readconfiguration {
 
 	public Readconfiguration() {
 
-		File src = new File("D:\\Hybrid_Framework_Project\\Automation_Framework_project\\src\\test\\resources\\Configuration\\Config.properties");
+		File src = new File("D:\\Hybrid_Framework_Project\\TutorialsNinja_TestAutomationFramework\\src\\test\\resources\\Configuration\\Config.properties");
 
 		prop = new Properties();
 

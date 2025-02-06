@@ -32,7 +32,7 @@ public class ExtentReportTestNG {
 	    Path resourceDirectory = Paths.get("src", "test", "resources");
 	    String absolutePath = resourceDirectory.toFile().getAbsolutePath();
 
-	    String reportPath = absolutePath + "/reports/" + name + ".html";
+	    String reportPath = "D:\\Hybrid_Framework_Project\\TutorialsNinja_TestAutomationFramework\\src\\test\\resources\\reports\\extentReport.html";
 
 	    ExtentHtmlReporter reporter = new ExtentHtmlReporter(reportPath);
 	    
